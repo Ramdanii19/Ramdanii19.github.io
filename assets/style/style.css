@@ -142,7 +142,7 @@ header .myprofile {
 }
 
 header .myprofile img {
-    width: 250px;
+    width: 400px;
     filter: drop-shadow(2px -24px 30px black);
 }
 
@@ -208,10 +208,12 @@ article.about.me .deskripsi a {
 }
 
 @keyframes light {
+
     0%,
     100% {
         box-shadow: 0 0 0 var(--color-button2) 0;
     }
+
     50% {
         box-shadow: 0 0 10px var(--color-button2);
     }
@@ -405,9 +407,11 @@ footer p {
         flex-direction: column;
         justify-content: flex-start;
     }
+
     nav .logo img {
         width: 100px;
     }
+
     nav.smartphone {
         display: inline-block;
         width: 100%;
@@ -418,6 +422,7 @@ footer p {
         position: fixed;
         top: 0;
     }
+
     nav.smartphone i {
         cursor: pointer;
         padding: 10px;
@@ -425,41 +430,52 @@ footer p {
         box-shadow: 0 0 5px rgba(0, 0, 0, .3);
         transition: .3s;
     }
+
     nav ul {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
     }
+
     nav ul li {
         margin: 0;
         margin-bottom: 50px;
         justify-content: center;
     }
+
     nav.desktop {
         transform: translateY(-100%);
     }
+
     nav.desktop.active {
         transform: translateY(0);
     }
+
     nav.smartphone i.active2 {
         transform: rotate(90deg);
     }
+
     header {
         height: 100vh;
     }
+
     header .myprofile {
         display: none;
     }
+
     header .judul {
         margin-top: 0;
     }
+
     header .judul .button {
         margin-top: 20px;
     }
+
     article.about.me {
         display: grid;
         grid-template-areas: "judul" "profile" "deskripsi";
     }
+
     article.about.me .deskripsi,
     article.about.me .profile {
         width: 100%;
@@ -467,12 +483,15 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+
     article.about.me .deskripsi {
         margin-top: 20px;
     }
+
     article.myproject {
         grid-template-areas: "judul" "videoJJ" "web" "design" "logo" "ui" "promotion";
     }
+
     .myproject .web,
     .myproject .videoJJ,
     .myproject .design,
@@ -481,13 +500,16 @@ footer p {
     .myproject .promotion {
         margin-bottom: 70px;
     }
+
     footer {
         padding: 60px 40px;
     }
+
     footer ul {
         flex-direction: column;
         align-items: center;
     }
+
     footer ul li {
         margin: 5px 0;
     }
